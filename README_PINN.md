@@ -173,7 +173,7 @@ When the **Maintenance** toolbar is selected, this list will change to only show
 
 Below the main OS List Window is a status window indicating the capacity of appropriate attached memory devices.
 
-On the **Main Menu**, this status window will show the space on the SD card that is available to install OSes, along with the amount of required space for the selected OSes. If a USB drive is inserted, a drop down selection box will appear to change the install device from the SD card to the USB device. You will be prompted to format the USB drive if it is not already formatted in the correct way for a PINN installation. The model of RPi you are using is shown in the bottom right corener of this status window.
+On the **Main Menu**, this status window will show the space on the SD card that is available to install OSes, along with the amount of required space for the selected OSes. If a USB drive is inserted, a drop down selection box will appear to change the install device from the SD card to the USB device. You will be prompted to format the USB drive if it is not already formatted in the correct way for a PINN installation. The model of RPi you are using is shown in the bottom right corner of this status window.
 
 On the **Archival** menu, this status window will change to show the amount of available and required space on the USB drive for downloading OSes to. Such a USB drive will only be selectable if it has an /os folder on its first partition to store OSes on.
 
@@ -189,6 +189,7 @@ In addition to the toolbars, the following functionality is provided:
  - <b>style</b>: The style of the windows display can be modified  by adding `style=motif/windows/platinum` to recovery.cmdline
  - <b>Wallpaper</b>: The background wallpaper of PINN can be changed by adding your own `wallpaper.png` file to PINN's recovery partition.
  - <b>wallpaper_resize</b>: A custom wallpaper can be resized to fill the entire desktop by adding this option.
+ 
 Note that all user settings (language, keyboard layout, display mode) will persist between reboots and will also be automatically passed to the installed OSes. This means that if you can see the PINN interface on your display device, you should be able to see the OS CLI/GUI when it boots too.
 
 ## User Control
