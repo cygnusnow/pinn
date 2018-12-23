@@ -148,8 +148,10 @@ bool BackupThread::processImage(const QVariantMap & entry)
     foreach (PartitionInfo * pPart, *partitions)
     {
         QString label = pPart->label();
-        QString dev = partdevices[i].toString();
+        QString part = partdevices[i].toString();
         QByteArray fstype   = pPart->fsType();
+
+        QString dev = getDevice(part);
 
         //   Mount it
         QProcess::execute("mount -o ro "+dev+" /tmp/src");
@@ -209,6 +211,8 @@ bool BackupThread::processImage(const QVariantMap & entry)
     emit statusUpdate(tr("%1: Updating os.json").arg(os_name));
     Json::saveToFile(backupFolder+"/os.json", ventry);
     sync();
+
+    emit newImage(QString(backupFolder+"/os.json"));
 
     delete pOsInfo;
 

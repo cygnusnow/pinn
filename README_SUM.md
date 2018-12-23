@@ -45,10 +45,20 @@ Please note that in some cases it may extract the files into a folder, if this i
 
 ## Change History
 
+## V3.0.2
+
+- **Backup USB**        - Improved backup size calculation for USB installed OSes.
+
+## V3.0.1
+
+- **Backup/Download**   - Removed the need to reboot after a download or backup.
+- **Wallpapers**        - removed wallpapers folder & Allowed JPEGs
+- **Default wallpaper   - Changed default to wallpaper.jpg
+
 ## V3.0
 
 - **Backup**                  - Backup an OS in PINN format
-- **Time**            	      - Added button to set date & time	
+- **Time**            	      - Added button to set date & time
 - **Download**                - Fix Foldername of some OSes when downloaded
 - **Iconcache**               - Cache icons when connected to internet to speedup startup
 
@@ -291,7 +301,7 @@ A major change to the User Interface in preparation for some new features.
 - **Network Drivers** - Added the popular RTL8188eu wifi driver (for HubPiWi and others)
 - **New Firmware**    - Updated Firmware and Kernel to match NOOBS 2.0
 
-### V1.9.5 
+### V1.9.5
 
 - **Self-Update**     - Notification and download of new releases
 
@@ -322,16 +332,16 @@ A major change to the User Interface in preparation for some new features.
 - **wifi config**     - A user supplied wpa_supplicant.conf file is now ALWAYS copied to /settings and then renamed to wpa_supplicant.conf.bak so that it does not continually overwrite any manual changes made through the GUI.
 
 
-### V1.9.2 
+### V1.9.2
 
 - **Password**        - Change or reset your password for each OS.
-- **DSI/HDMI**        - Auto-switching of DSI/HDMI screen with HDMI taking priority 
+- **DSI/HDMI**        - Auto-switching of DSI/HDMI screen with HDMI taking priority
 
 #### BugFixes
 
-- **NoobsConfig**     - Config filenames now now have all spaces converted to underscores 
-- **Multiple Os**     - Multiple installed OSes can now be selected again. 
-- **DHCP**            - ClientID is now used instead of DUID to request an IP address 
+- **NoobsConfig**     - Config filenames now now have all spaces converted to underscores
+- **Multiple Os**     - Multiple installed OSes can now be selected again.
+- **DHCP**            - ClientID is now used instead of DUID to request an IP address
 
 
 ### V1.9.1 (based on NOOBS v1.9)
